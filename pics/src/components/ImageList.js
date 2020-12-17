@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "./Image";
+import "./ImageList.css";
 
-const ImageList = ({ images }) => {
+const ImageList = ({ images, removeItem }) => {
   return (
-    <div>
+    <div className="image-list">
       {images.map((img) => (
         <div>
           <Image
@@ -11,6 +12,7 @@ const ImageList = ({ images }) => {
             image={img.urls.regular}
             alt={img.alt_description}
           />
+          {/* <button onClick={() => removeItem(img.id)}>Delete</button> */}
         </div>
       ))}
     </div>
