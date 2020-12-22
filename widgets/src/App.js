@@ -5,6 +5,7 @@ import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
 import Translate from "./components/Translate";
 import Route from "./components/Route";
+import Header from "./components/Header";
 
 const items = [
   { title: "What is React?", content: "A front end framework" },
@@ -21,6 +22,7 @@ const App = () => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <div>
+      <Header />
       <Route path="/">
         <Accordion items={items} />
       </Route>
