@@ -5,7 +5,7 @@ const createPolicy = (name, amount) => {
   return { // Action (a form in our analogy)
     type: 'CREATE_POLICY',
     payload: {
-      name: name,
+      name: name, 
       amount: amount
     }
   };
